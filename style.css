@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway&display=swap');
+:root{
+    --primary-color: #03bafc;
+    --secondary-color: #03cffc;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Raleway', sans-serif; */
+}
+
+.flex{
+    display: flex;
+}
+
+.card{
+    max-width: 35%;
+    margin: 15rem auto;
+    border: 1.5px solid var(--primary-color);
+    display: flex;
+    flex-direction: column ;
+    border-radius: 0.5rem;
+}
+
+.profile .flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.profile span{
+    display: inline;
+}
+
+.profile img{
+    max-width: 6rem;
+    border-radius: 50rem;
+    margin: 0.5rem;
+    padding: 0.1rem;
+    border: 1px solid var(--primary-color);
+}
+
+.details {
+    display: flex;
+}
+
+.name{
+    margin-top: 0.5rem;
+    margin-left: 0;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+.title{
+    color: gray;
+    font-size: 13px;
+}
+
+
+.follow{
+    padding: 2rem;
+}
+
+.follow span{
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bolder;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.follow span:hover{
+    background-color: var(--secondary-color);
+}
+
+.content{
+    margin-left: 0.9rem;
+    padding: 0.4rem;
+    font-size: large;
+    font-weight: 500;
+    font
+}
+
+.likes{
+    padding: 1rem;
+}
+
+.count{
+    color: red;
+}
+
+.heart:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+}
